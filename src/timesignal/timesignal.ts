@@ -24,15 +24,15 @@ type callback = (strTime: string) => void;
 export default class Timesignal {
 	constructor(mountpoint: HTMLDivElement, options: timesignalOptions, callback: callback) {
 		// チック
-		this._tick.src = '/sound/tick.opus';
+		this._tick.src = '/timesignal/sound/tick.opus';
 		this._tick.preload = 'auto';
 		mountpoint.appendChild(this._tick);
 		// チック2
-		this._tick2.src = '/sound/tick_2.opus';
+		this._tick2.src = '/timesignal/sound/tick_2.opus';
 		this._tick2.preload = 'auto';
 		mountpoint.appendChild(this._tick2);
 		// チャイム
-		this._chime.src = '/sound/chime.opus';
+		this._chime.src = '/timesignal/sound/chime.opus';
 		this._chime.preload = 'auto';
 		mountpoint.appendChild(this._chime);
 
