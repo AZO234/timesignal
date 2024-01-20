@@ -7,7 +7,7 @@ export default class tsvZunda extends TimesignalVoiceSet {
     super();
 
     // 音声ファイル
-    const fileHead = "/sound_zunda/zunda_ja_";
+    const fileHead = "/timesignal/sound_zunda/zunda_ja_";
     const fileExt = ".opus";
     this._voiceFiles.push(fileHead + "choudo" + fileExt); // 0：ちょうど
     this._voiceFiles.push(fileHead + "juubyou" + fileExt); // 1：じゅうびょう
