@@ -103,7 +103,6 @@ export default class Timesignal {
 				const el = <HTMLAudioElement>document.createElement('audio');
 				el.src = seq[i].src;
 				this._seq.push(el);
-				console.log(el.src);
 				this._seq[i].pause();
 				if(i < seq.length - 1) {
 					this._seq[i].onended = function () {
