@@ -25,7 +25,7 @@ export default class tsvGoogle extends TimesignalVoiceSet {
     this._voiceFiles.push(fileHead + "nanafun" + fileExt); // 13:ななふん
     this._voiceFiles.push(fileHead + "happun" + fileExt); // 14:はっぷん
     this._voiceFiles.push(fileHead + "kyuufun" + fileExt); // 15:きゅうふん
-    this._voiceFiles.push(fileHead + "jyuppun" + fileExt); // 16:じゅっぷん
+    this._voiceFiles.push(fileHead + "juppun" + fileExt); // 16:じゅっぷん
     this._voiceFiles.push(fileHead + "nijuu" + fileExt); // 17:にじゅう
     this._voiceFiles.push(fileHead + "sanjuu" + fileExt); // 18:さんじゅう
     this._voiceFiles.push(fileHead + "yonjuu" + fileExt); // 19:よんじゅう
