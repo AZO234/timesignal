@@ -7,7 +7,7 @@ export default class tsvGoogle extends TimesignalVoiceSet {
     super();
 
     // 音声ファイル
-    const fileHead = "/timesignal/sound_google/google_ja_";
+    const fileHead = "./sound_google/google_ja_";
     const fileExt = ".opus";
     this._voiceFiles.push(fileHead + "choudo" + fileExt); // 0:ちょうど
     this._voiceFiles.push(fileHead + "juubyou" + fileExt); // 1:じゅうびょう

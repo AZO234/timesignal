@@ -7,7 +7,7 @@ export default class tsvYukkuri extends TimesignalVoiceSet {
     super();
 
     // 音声ファイル
-    const fileHead = "/timesignal/sound_yukkuri/yukkuri_ja_";
+    const fileHead = "./sound_yukkuri/yukkuri_ja_";
     const fileExt = ".opus";
     this._voiceFiles.push(fileHead + "0" + fileExt); // 0:れい
     this._voiceFiles.push(fileHead + "1" + fileExt); // 1:いち

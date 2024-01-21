@@ -24,15 +24,15 @@ type callback = (strTime: string) => void;
 export default class Timesignal {
 	constructor(mountpoint: HTMLDivElement, options: timesignalOptions, callback: callback) {
 		// チック
-		this._tick.src = '/timesignal/sound/tick.opus';
+		this._tick.src = './sound/tick.opus';
 		this._tick.preload = 'auto';
 		mountpoint.appendChild(this._tick);
 		// チック2
-		this._tick2.src = '/timesignal/sound/tick_2.opus';
+		this._tick2.src = './sound/tick_2.opus';
 		this._tick2.preload = 'auto';
 		mountpoint.appendChild(this._tick2);
 		// チャイム
-		this._chime.src = '/timesignal/sound/chime.opus';
+		this._chime.src = './sound/chime.opus';
 		this._chime.preload = 'auto';
 		mountpoint.appendChild(this._chime);
 
@@ -103,6 +103,7 @@ export default class Timesignal {
 				const el = <HTMLAudioElement>document.createElement('audio');
 				el.src = seq[i].src;
 				this._seq.push(el);
+				console.log(el.src);
 				this._seq[i].pause();
 				if(i < seq.length - 1) {
 					this._seq[i].onended = function () {
@@ -118,7 +119,15 @@ export default class Timesignal {
 		
 		// 停止中でなければコールバックを呼ぶ
 		if(!this._options.bStop) {
-			const hours = date.getHours().toString().padStart(2, '0');
+			let h = date.getHours();
+			let hours = '';
+			if(!this._options.b24Hour) {
+				if(h < 12) {
+					hours = 'AM ' + date.getHours().toString().padStart(2, '0');
+				} else {
+					hours = 'PM ' + (date.getHours() - 12).toString().padStart(2, '0');
+				}
+			}
       const minutes = date.getMinutes().toString().padStart(2, '0');
       const seconds = date.getSeconds().toString().padStart(2, '0');
       const milliseconds = date.getMilliseconds().toString().padStart(3, '0');
