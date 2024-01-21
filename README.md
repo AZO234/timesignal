@@ -1,7 +1,7 @@
 # インターネット時報
 
 ![GitHub Tag](https://img.shields.io/github/v/tag/AZO234/timesignal)
-![example workflow](https://github.com/AZO234/timesignal/actions/workflows/main.yml/badge.svg)
+![workflow](https://github.com/AZO234/timesignal/actions/workflows/main.yml/badge.svg)
 
 音声にて日本標準時(JST)を読み上げます。
 
