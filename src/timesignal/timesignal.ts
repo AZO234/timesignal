@@ -120,7 +120,9 @@ export default class Timesignal {
 		if(!this._options.bStop) {
 			let h = date.getHours();
 			let hours = '';
-			if(!this._options.b24Hour) {
+			if(this._options.b24Hour) {
+  			hours = date.getHours().toString().padStart(2, '0');
+	  	} else {
 				if(h < 12) {
 					hours = 'AM ' + date.getHours().toString().padStart(2, '0');
 				} else {
