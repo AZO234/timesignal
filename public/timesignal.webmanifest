@@ -3,7 +3,7 @@
   "short_name": "インターネット時報",
   "description": "インターネット上で正確な時刻を知るためのアプリケーションです。",
   "lang": "ja",
-  "start_url": "/",
+  "start_url": "https://azo234.github.io/timesignal/",
   "display": "standalone",
   "icons": [
     {
