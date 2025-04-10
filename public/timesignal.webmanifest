@@ -1,0 +1,26 @@
+{
+  "name": "インターネット時報",
+  "short_name": "インターネット時報",
+  "description": "インターネット上で正確な時刻を知るためのアプリケーションです。",
+  "lang": "ja",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "icons/clock.png",
+      "sizes": "512x512"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/wide.png",
+      "sizes": "1280x720",
+      "form_factor": "wide"
+    },
+    {
+      "src": "screenshots/narrow.png",
+      "sizes": "320x640",
+      "form_factor": "narrow"
+    }
+ ]
+}
