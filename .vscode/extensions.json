@@ -3,6 +3,7 @@
     "ms-vscode.vscode-typescript-next",
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
-    "antfu.vite"
+    "antfu.vite",
+    "github.vscode-github-actions"
   ]
 }

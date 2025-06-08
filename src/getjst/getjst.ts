@@ -11,18 +11,19 @@ URL: https://domisan.sakura.ne.jp/getjst.php
 // getjst.cgiが返答するJSONデータ
 {
   "result": int 0:失敗/1:成功、NTP取得にて時刻修正/2:成功、キャッシュにて時刻修正,
-  "t1h": 32bit クライアント開始UNIX時刻 整数部,
-  "t1l": 32bit クライアント開始UNIX時刻 小数部,
   "t2h": 32bit サーバ受信UNIX時刻 整数部,
   "t2l": 32bit サーバ受信UNIX時刻 小数部,
   "t3h": 32bit サーバ返信UNIX時刻 整数部,
   "t3l": 32bit サーバ返信UNIX時刻 小数部,
-  "t4h": 32bit クライアント終了UNIX時刻 整数部,
-  "t4l": 32bit クライアント終了UNIX時刻 小数部
 }
 
 // 時刻補正方法
-delta ローカルの遅延 = ((t2 + t3) - (t1 + t4)) / 2
+// t1 クライアント計測
+// サーバ取得(t2, t3)
+// t4 クライアント計測
+
+// 時刻補正方法
+delta = ((t2 + t3) - (t1 + t4)) / 2
 fix_time = localtime + delta
 *****/
 
