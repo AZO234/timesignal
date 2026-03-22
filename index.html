@@ -49,6 +49,11 @@
       }
     }
   </script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js');
+    }
+  </script>
   <meta name="google-site-verification" content="vQ72AZEoAEYMS0ESnwraapBNwymn9um_hb7upCM2r80" />
   <meta name="msvalidate.01" content="1048F383E1C3CEED17CE0D496934A810" />
   <meta name="robots" content="index, follow">
