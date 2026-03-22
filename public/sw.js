@@ -1,5 +1,5 @@
 // sw.js (Service Worker)
-const CACHE_NAME = 'jippo-v1';
+const CACHE_NAME = 'timesignal-v1';
 
 const PRECACHE_URLS = [
   '/',
